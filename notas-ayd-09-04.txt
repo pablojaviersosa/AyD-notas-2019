@@ -1,0 +1,101 @@
+El que del sistema.
+
+Bueno, bonito y barato.
+El costo de detectar y resolver problemas incrementea exponencialmente con el avance de las fases.
+
+Concepto
+El espectro amplio de tareas y técnicas que llevan a entender los requerimientos se denomina ing
+de requerimientos.
+
+La ing de requerimientos proporciona el mecanismo adecuado apropiado para entender lo que desea el cliente,
+analizar las nec, negociar una solución, especificar sin ambiguedades, validar la especificación,
+administrar los requerimientos 
+Los requerimientos paea un sistema son la descripción de los servicios proporcionados or el sistema
+y sus restricciones operativas.
+
+Los requisitos soncapacidades y condiciones que el sitema...
+
+Problemas
+####################
+Difusa separación de niveles de descripción:
+
+    los requrimeientos del usuario son declaraciones, en el lenguaje natural
+    u en diagramas, de los servicios que se espera que el sistema proporcione y de las
+    restricciones bajo las cuales debe funcionar.
+
+    Los requrimientos del sistema establecen con detalle las fi¿unciones, servicios y restricciones 
+    operativas del sistema.
+
+Clasificación
+###################
+
+Requerimientos funcionales: delaran los servicios que debe proporcionar el sistema, la manera de
+reaccionar ante las entradas y los tipos de salidas que debe generar.Pueden expresar lo que no 
+debe hacer el sistema.
+
+Completa (todo lo que el usuario requiere) 
+
+Requerimientos no funcionales : escalabilidad, robustez, usbilidad,entorno.
+
+Requerimientos dle dominio: provienen del dominio de la aplicacion y reflejan las caracteristicas
+y restricciones de ese dominio. Pueden ser funcionales o no.
+--------------------------------------
+
+Clasificación FURPS+
+###########################
+
+Functional:
+
+Etapas
+
+Concepción: ¿Cómo inicia un proyecto de software?
+    Se identificauna necesidad del negocio o se descubre un nuevo mercado o 
+    servicio pertenencial.
+
+    Se establece el entendimiento básico del problema, las personas que quierenuna solución 
+    la naturaleza de la solución y colaboración preliminares entre los otros participantes y
+    el equipo.
+
+Indafación: explorar para obtener versiones informales del negocio.
+
+Elaboración: Escenarios de usuario que describan cómo interactuará el usuario final(y otros actores)
+con el sistema. Cada escenario de usuario se enunca con sintaxis apropiada para extraer clase de 
+análisis, que son entidades del dominio de negocio visible para el usuario final.
+
+-----------------------------------
+Negociación: distintos clientes o usuarios propagan requrimeintos conflictivos con el argumento
+de que su versión es "esencial para nuestras necesidades especiales".
+Hay que negociar.
+
+Especificación: una especificación puede ser un documento escrito, un conjunto de modelos gráficos,
+un modelo matemático formal, un conjunto de escenarios de uso, un prototipo o cualquier combinación
+de éstos.
+
+Validación: analiza la especificación a fin de garantizar que los requerimientos han sido enunciados
+sin ambigüedades; que se detectaron y corrigieron las inconsistencias, las omisiones y los errores,
+y que los productos del trabajo se presentan conforme a los estándares establecidos par ael proceso,
+el proyecto y el producto.
+
+Administración: es el conjunto de actividades que ayudan al equipodel proyecto a identificar, controlar 
+y dar seguimiento.
+
+Documento de (especificación ) de Requerimientos.
+
+Es la declaración oficial de qué deben implementar los desarrolladores del sistema
+Incluído el presupuesto.
+----------------------------------------------
+Documento de visión
+
+Prefacio
+Introducción
+Glosario
+Requerimientos de usuarios
+Arquitectura del sistema
+Especificaciones de requerimientos del sistema
+Modelos del sistema
+Evolucion del sitema
+Apendices
+Indice
+----------------------------------------------
+
+
