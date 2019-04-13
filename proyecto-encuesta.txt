@@ -1,0 +1,8 @@
+Proyecto Encuesta.
+
+Sistema de Relevamiento de datos.  y Visualización Cruda.
+
+Visualización en función de modelos matemáticos.
+
+Qué es una encuesta, 
+

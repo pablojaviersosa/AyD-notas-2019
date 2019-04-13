@@ -1,0 +1,66 @@
+Analisis y diseño
+
+* Los ciclos de vida
+Aica
+Comunicacion -
+Planificacion
+Modelado
+Construccion
+Despliegue
+
+Proceso de Software
+
+Calidad : relacionado con las metodologías de desarrollo, y procesos estandarizados.
+ 
+Ingenieria de Software -> Anclaje matemático lógico 
+
+Modelo de Cascada o Waterfall
+Requerimiento. Diseño implementacion verificación Mantenimiento.
+No hay contacto con el usuario final hasta que el proyecto esta terminado.
+Proyectos extensos porque hay que ver todos los casos de uso al principio.
+Es un metodo seguro porque queda todo documentado y firmado.
+
+No es fleible. Problemas con en equipos grandes, en proyectos con alto grado de incertidumbre y
+cuando surgen problemas.
+
+
+MOdelo incremental: Etapas
+
+Pequeñas cascadas, separando las partes en pequeños proyectos. Aparece el problema de la inytegración,
+Entregas mas rápidas, reducción de costos. 
+No tengo una visión completa del sistema.
+
+Ingenieria de reuso, desarrollo basado en componentes: Caracteristicas
+
+Etapas
+1 Investigan y evaluab para el tio de aplicacion de que se tratem productos disponibles basados en componentes.
+2 Se consideran los aspectiis de integracion de os componentes.
+
+Permite reducir el tiempo y el costo de desarrollo
+Se establecen realciones de compromiso entre los requerimientos del cliente y scomponentes
+Se pierde control sobre la ebvoucion de sistema. debido a que las nuevasversiones d los componentes reutiliza
+bles no estan vajo el control de la organizacion qeu los usa. Poblemas con actualizaciones.
+
+Prototipado:Caracteristicas
+Es una teecnica que puede implementarse enn elk conteto de cualquiera d e lso modelos dl proceso.
+El prototupi sirve como mecanismo para identificar los requerimientos del software
+Los rototipos no tienen que ser ejecutables para ser utiles
+
+Espiral de Boehm 1986 relaciona tambien lo economico, introduce el riesgo, se retoma en otras metodologias
+con la idea de agregar valor al usuario
+INcremental
+reduce riesgos
+incorpora objetivos de calidad
+intregra el desarrollo con el mantenimiento
+Genera muco tiempo en l desarrollo del sitema
+modelo costoso
+Requiere experiencia en la identificacion de riesgos.
+
+Modelo concurrente
+Dividir
+
+Proceso personal de software
+Definir a merodología propia como estandar.
+
+Actividad: Exponer sobre una metodología.
+

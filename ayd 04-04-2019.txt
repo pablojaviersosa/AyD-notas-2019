@@ -1,0 +1,47 @@
+Un proceso unificado
+El proceso unificado de  Desarrollo de Software o simplemente Proceso Unificado es
+un marco de desarrollo de software que se caracteriza por estar dirigido por casos
+de uso, centrado en al arquitectura y or ser iterativo e incremental. El refinamiento
+mas conocido y documentado del Proceso Unificadode Rational o simplemente RUP.
+El Proceso Unificado no es...
+
+Motivaciones
+
+Proporcionar una guía para ordenar las actividades del equipo de desarrollo.
+Dirigir las tares de cada desarrollador por separado y del equipo como un todo.
+Especificar los atefactos que deven desarrollarse.
+Ofrecer criterios para el control y al medición de los productos y actividaddes del proyecto.
+---------------------------
+Una mirada general
+
+Se basa en componentes 
+El sistema se construye por la interconexión de componentes mediante interfaces.
+Utiliza UML paraa esquematizar el sistema.
+
+Aspectods claves
+    Dirigido por casos de uso.
+        * Fragmento de funcionalidad dle sistema ue proporciona al usuario un resultadoumportante
+        * REpresentan requisitos funcionales.
+    Centrado en la arquitectura. En contraposición de las metodologías ágiles que se centran en
+el software funcionando.
+        * Incluye aspectos estáticos y dinpamicos
+        * Surge de las necesidadsdel cliente, de acuerdo a cómo la perciben los stakeholders,
+y se refleja en los casos de uso.
+CAsos de uso y arquitectura esán intimamente relacionados.
+    * Cada producto tiene una forma y función,
+    * Función -> Caso de uso.
+    * Forma -> Arquitectura.
+
+Iterativo e Incremetal
+* El trabajo se divide en partes mas pequeñas: miniproyectos.
+*
+*
+*
+
+La vida de Proceso
+ El Proceso unificado se repite a lo largo de ciclos.
+* Cada ciclo finaliza con uina versión del producto.
+    * El producto no es solamente código ejecutable
+    Iterativo e incremental
+
+
