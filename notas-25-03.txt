@@ -1,0 +1,74 @@
+La agilidad del proceso
+
+Aica 
+Plan base developmentDesarrollo basado en un plan vs Desarrollo Agil
+
+Ingenieria de requerimientos -> especificacino -> disenio e implementacion
+^-----------------------------------------------------------------|
+
+Sommetville y pressman planteaban
+Requerimientos y analisis
+disenio
+implementacion
+
+2001 kent beck Manifiesto Agil-> alianza agil
+
+Individuos y sus intercciones sobre los proceso y las herramietas
+ softaware que funciona mas que la doc exhaustiva
+Colaboravcion con el cliente mas que el contrato.
+
+Suposiciones del proceso agil
+Para muchos tipos de soft el disenio y la construccion estan ibricados.
+Es decir, ambas actividades deben ejecutarse en forma simultanea, de modo que
+lso modeñlos de diseño se prueben necesuta antes de qye se yse la construccion para
+probar el disenio.
+el analisis, el disenio, la onstrucicion y las pruebas no son tan predecibles como nos gustaria
+
+Es dificil predecir requerimientos.
+
+El proceso agil
+Dadas estas tres suposiciones, surge una pregunta importante. Como crear un proceso 
+que pueda manejar lo impredecible?
+
+La rspuesta es un proceso agil debe ser adapatable.
+Debe adaptarse incrementalmente
+Requiere etroalimentacion con el cliente.
+    Un catalizadore eficaz para la retroalimentecion con el cliente es nun prototipo
+operativo o una porcion de un stema operatuvo.
+Debe instituirse una estgrategia 
+
+...
+
+
+Principios de agilidad
+Satisfacer aln cliente
+obtener requerimientos
+Entregar software fucionando
+personas de negocios y desarrolladores laburando juntos
+individuos motivados
+El metodo mas efuiciente y eficaz de trasmitir informacion es, cara a cara.
+Desarrollo sostenible
+Excelencia Técnica
+Simplicidad
+Las mejores arquitecturas, requerimientos u diseños sutgen de los equipos con organizacion propia.
+El equipo reflexiona sobre su practica.
+Centrarse en las personas.
+
+Competencias clave
+
+Competencia. INcluye el talento innato, las habilidades especificas relacionadas con el sfware y el conocimiento
+general del proceso que el equipo haya elegido aplicar.
+Enfoque comun. Todos deben centrarse en una meta: entregar al cliente en al fech prometida un incremento de sogtware
+que funcione
+colaboracion
+....
+
+
+
+
+
+
+
+
+
+
