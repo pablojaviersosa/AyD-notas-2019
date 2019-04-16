@@ -5,4 +5,7 @@ Sistema de Relevamiento de datos.  y Visualización Cruda.
 Visualización en función de modelos matemáticos.
 
 Qué es una encuesta, 
+Como debemos armar las encuestas para poder obtener la informacion necesaria
+    como armar los indicadores
 
+Modelo
