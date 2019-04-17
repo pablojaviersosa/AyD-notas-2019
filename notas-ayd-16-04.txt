@@ -1,0 +1,74 @@
+Los usos del sistema
+Artefactos, proceso unificado de desarrollo
+
+El proceso unificado esta dirigido por los casos de uso.
+Clientes y ususarios tienen metas y desean que los sistemas que desean que el sistema realice.
+
+LOs casos de uso son escenarios del uso de un sistema para alcanzar una meta.
+
+Elementos basicos de los casos de uso
+Alguien es un rol,algo externo que interactúa con mi sistema.
+
+Un actor es algo con comportamiento
+    una persona
+    un sistema
+    una organización
+
+Un esceneario es uan secuencia específica de acciones e interacciones entre actores u el sistema bajo dis
+cusión. También se lo conoce como *instancia de cada uso*.
+    Es una historia particular de uso del sistema o un cmino dentro de un caso de uso
+Un caso de uso es una colección de escenarios exitosos y fracasados que describen actores usando un sistema
+pára..
+
+Requerimientos funcionales
+Los casos de uso son requerimientos
+    Son funcionales, en tanto indican qué hará el sistema
+Los casos de uso definen una promesa o contrato de cómo se comportará el sistema.
+
+Los cassos de uso  son documentos de texto, no diagramas.
+    Y el modelado de casos de uso es primariamente un acto de escritura de texto, no de dibujo.
+Los diagramsa de caso de d euso de UML son útiles para ilustrar los nombres de los casos de uso y de
+los actores y mostrar sus relaciones.
+
+-------
+
+Responsabilidades
+
+El modelo mas recomendado y usado es el de caha negra.
+    NO describe el funcionamiento interno, ni componentes , ni diseño.
+
+Se describe el sistema como teniendo responsabilidades.
+
+CORRECTO: El sistema registra una venta
+INCORRECTO: l istema escribe la venta enuna BD o El sistema genra una consulta SQL
+
+
+El formato de Alistair
+
+NOmbre del caso de uso
+Actor principa
+Stakeholders    A quienes satisface?
+Precondiciones
+Postcondiciones
+Escenario de Exito //////Camino tipico  que sucede para satisfacer lso intereses de los stakeholders
+Actor ----------Sistema
+
+
+Extensiones con los casos de fallas 
+Requisitos no funcionales
+Tecnologicos
+Frecuencia
+
+------------------------------------------
+
+Encontrar los Elementos
+Los casos de uso se definen para satisfacer las metas de los actores
+1) Elija la frontera del sitema 
+--------------------------------------------
+Consideraciones Generales
+
+UN actor es cualqueir cosa con comportamioente. Es externo al sistema.
+
+Los casos de uso hay que escribirlos.
+
+

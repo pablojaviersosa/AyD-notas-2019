@@ -8,4 +8,9 @@ Qué es una encuesta,
 Como debemos armar las encuestas para poder obtener la informacion necesaria
     como armar los indicadores
 
-Modelo
+Fuentes de recoleccion
+    Primarias las que genero
+        realizar pruebas, realizar encuestas y probarlas en la uni.
+
+Necesitamos que el sistema pueda comparar la movilidad en las ciudad relacionando ingresos,
+de la poblacion 
