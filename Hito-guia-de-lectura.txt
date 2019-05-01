@@ -25,8 +25,5 @@ D) Los tres tipos principales de clases que suelen encontrarse en un modelo de
 dominio representan:
     * Los objetos del negocio, como pedidos,"cancelaciones", reportes, deudas, saldos,
     o cualquier otra clase 
-    * Los concetos
-
-
-
-
+    * Los objetos del mundo real o conceptos,
+    
