@@ -1,0 +1,32 @@
+Guía de Lectura
+
+Casos de uso
+
+Capítulo 6
+
+A) Disfruto amasar pizza, cada vez que tengo oportunidad de ello. Si bien las
+proporciones la elaboración de la masa son las mismas, hay diversos factores que
+son difíciles de transmitir para poder explicar cuál es la forma en la que me
+gusta.
+
+B) La función del analista es generar los artefactos necesarios para plasmar los
+requeriemientos del sistema, de manera común para los stakeholders y las
+diferentes visiones que ello implica y así garantizar llegar a un sistema
+correcto. Ya que el lenguaje natural de cada uno, por su especialidad, puede
+ocasionar ambigüedades.
+
+C) Por lo anterior, es necesario elaborar un glosario que determine univocamente
+cuál es la equivalencia entre la jerga utilizada por el cliente y los usuarios y
+el modelo o la regla del negocio que puede entender los desarrolladores. Lo que
+garantiza el correcto entendimiento de la funcionalidad que debe alcanzar el
+sistema.
+
+D) Los tres tipos principales de clases que suelen encontrarse en un modelo de
+dominio representan:
+    * Los objetos del negocio, como pedidos,"cancelaciones", reportes, deudas, saldos,
+    o cualquier otra clase 
+    * Los concetos
+
+
+
+
