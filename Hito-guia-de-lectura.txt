@@ -24,6 +24,73 @@ sistema.
 D) Los tres tipos principales de clases que suelen encontrarse en un modelo de
 dominio representan:
     * Los objetos del negocio, como pedidos,"cancelaciones", reportes, deudas, saldos,
-    o cualquier otra clase 
-    * Los objetos del mundo real o conceptos,
+      o cualquier otra clase.
+    * Los objetos del mundo real o conceptos del mundo real de los que se debe
+      hacer un seguimiento. Por ejemplo empleados, contratistas, distribuidoras,
+      etc.
+    * Sucesos, registro de entradas y salidas, historial de ventas.
+
+E) El modelo de dominio facilita la comprensión del problema, desde el punto de
+vista en que el analista no debe perder de vista este objetivo, centrandose en
+el qué y no en el cómo.
+
+F) Basicamente el modelo de dominio se diferencia con el modelo de negocio en
+que este último tiene en cuenta los procesos que lleva adelante la organización
+aunque sean externos al sistema, involucra actores con los que interactua mi
+sistema y el modelo de dominio sólo identifica las clases que componen el
+sistema.
+
+Capítulo 7
+
+1) La descripción de los casos de uso provee las funcionalidades que debe
+cumplir el sistema. Y basados en estas los correspondientes requisitos no
+funcionales.
+
+2) Nuestro sistema interactua con diversos actore, pueden ser otros sitemas o
+usuarios, para los que debe verificar cumplir ciertas funcionalidades, la forma
+en la que se garantiza que dichas funcionalidades serán desarrolladas y que
+están correctamente comprendidas, es através del modelado de los casos de uso.
+
+La importancia del actor es que entre otras cosas puede representar un
+usuario, por lo que nuestros casos de uso registran qué valor aporta a ese
+usuario el sistema.
+
+3) Se resuelven con el análisis y el diseño posterior.
+
+4) Los artefactos que facilitarán el entendimiento con los usuarios son: 
+    - Los actores.
+    - Descripción de la arquitectura ya que plasma las funcionalideades críticas
+      que el sistema debe cumplir.
+    - Glosario.
+    - Prototipo de interfaz de usuario.
+
+5) En los casos en los que contamos con un modelo de negocios, resulta mas
+sencillo encontrar a los actores, asignando uno a cada trabajador del negocio,
+otro a los clientes, etc.. En otros casos es necesario repasar cada uno de los
+actores, hacer entrevistas para poder comprender que casos de uso son
+necesarios.
+
+6)  - Cada trabajador es un actor. (Si no parto de un modelo de negocio debo
+                                    armarlo con el cliente)
+    - Cada usuario sistema es un actor (Si utiliza info del sistema).
+    - Clasificalos como sistemas externos y actores para el mantenimiento y
+        operación del sistema.
+    - Actores candidatos: sin roles repetido.
+
+7)  a. Si se parte de modelo de negocio.
+        - Un caso de uso para cada rol de cada trabajador que participa.
+    b. Sino debo hacer entrevista con los usuarios para obtener casos de uso.
+
+8) Debería incorporar:
+    - Prioridad.
+    - Soporte visual para casos de uso complejos.
+
+9)  Herramientas para la construcción de la interfaz de usuario:
+    - Sketches      - Bocetos en papel.
+    - Wireframes    - Como los vocetos, pero con mas detalle, tratando de respetar
+                      colores, disposiciones y aumentar el detalle.
+    - Prototipos    - Emulaciones de la interfaz terminada
     
+    Herramientas de diseño:
+        - Swing             - para diseñar interfaces gráficas en java.
+        - www.mockflow.     - Suit completa para UX Desing (User Experience).
