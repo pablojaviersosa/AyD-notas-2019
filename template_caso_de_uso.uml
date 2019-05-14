@@ -1,0 +1,7 @@
+@startuml
+
+User <|-- Admin
+(Start) <|-- (Use)
+
+@enduml
+
