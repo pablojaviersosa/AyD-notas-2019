@@ -1,7 +1,5 @@
 @startuml
-
-User <|-- Admin
-(Start) <|-- (Use)
-
+:Bob: -> Alice: Hello!
+actor User <|-- (Use)
 @enduml
 
