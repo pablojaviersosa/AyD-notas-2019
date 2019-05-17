@@ -1,18 +1,18 @@
 @startuml
 
-(Loguearse en el sistema)
-Cargar mis datos como productor
-Modificar mis datos como productor
-Ver listados de productores
-Filtrar listados de productores por diferentes criterios
-Modificar datos de productores cargados
-Darme de alta como productor
-Dar de alta eventos
-Cargar datos de eventos
-Modificar datos de eventos
-Visualizar estadísticas básicas del sistema
-Visualizar eventos en forma de calendario
-Enviar mails masivamente a diferentes productores
-Registrar los mails enviados (fecha, destinatarios y contenido)
-Validar datos ingresados de forma automática, cuando corresponda.
+:Productor: -- (Loguearse en el sistema)
+:Productor: -- (Cargar mis datos como productor)
+:Productor: -- (Modificar mis datos como productor)
+(Ver listados de productores)
+(Filtrar listados de productores por diferentes criterios)
+(Modificar datos de productores cargados)
+(Darme de alta como productor)
+(Dar de alta eventos)
+(Cargar datos de eventos)
+(Modificar datos de eventos)
+(Visualizar estadísticas básicas del sistema)
+(Visualizar eventos en forma de calendario)
+(Enviar mails masivamente a diferentes productores)
+(Registrar los mails enviados )
+(Validar datos ingresados de forma automática, cuando corresponda)
 @enduml
