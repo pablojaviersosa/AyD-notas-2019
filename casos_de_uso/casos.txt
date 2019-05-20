@@ -1,18 +1,38 @@
 @startuml
+:Productor: as pro
+:Funcionario: as fun
+:Administrador: as ad
 
+/' Relaciones como productor '/
 :Productor: -- (Loguearse en el sistema)
-:Productor: -- (Cargar mis datos como productor)
-:Productor: -- (Modificar mis datos como productor)
-(Ver listados de productores)
-(Filtrar listados de productores por diferentes criterios)
-(Modificar datos de productores cargados)
-(Darme de alta como productor)
-(Dar de alta eventos)
-(Cargar datos de eventos)
-(Modificar datos de eventos)
-(Visualizar estadísticas básicas del sistema)
-(Visualizar eventos en forma de calendario)
-(Enviar mails masivamente a diferentes productores)
-(Registrar los mails enviados )
-(Validar datos ingresados de forma automática, cuando corresponda)
+:Productor: -- (Cargar datos como productor)
+(Cargar datos)<|-- (Cargar datos como productor)
+:Productor: -- (Modificar datos productor)
+(Modificar datos)<|-- (Modificar datos productor)
+(Modificar datos del productor)<-- (Modificar Rubro)
+(Modificar datos del productor)<-- (Modificar Rubro)
+:Productor: -- (Ver listados de productores)
+:Productor: -- (Filtrar listados de productores por diferentes criterios)
+:Productor: -- (Modificar datos de productores cargados)
+:Productor: -- (Darme de alta como productor)
+:Productor: -- (Dar de alta eventos)
+:Productor: -- (Cargar datos de eventos)
+:Productor: -- (Visualizar estadísticas básicas del sistema)
+:Productor: -- (Visualizar eventos en forma de calendario)
+:Productor: -- (Enviar mails masivamente a diferentes productores)
+:Productor: -- (Registrar los mails enviados )
+:Productor: -- (Validar datos ingresados de forma automática, cuando corresponda)
 @enduml
+
+@startuml
+/'Relaciones como funcionario'/
+:Funcionario: -- (Loguearse en el sistema)
+@enduml
+
+@startuml
+
+/'Relaciones como supervisor'/
+:Supervisor: -- (Loguearse en el sistema)
+:Supervisor: -- (Modificar datos de eventos)
+@enduml
+
