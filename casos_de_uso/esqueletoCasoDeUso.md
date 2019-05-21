@@ -1,19 +1,22 @@
-Use Case: Name of use case.
+Caso de uso: Nombre del caso de uso.
 =================================
+
+**ID**: CU001
+
 **Actors**: Actor
 
-**Scope**: Software system
+**Alcance**: Sistema de software
 
-**Purpose**: Intention of the use case.
+**Proposito**: Intención del caso de uso.
 
-**Type**: Primary (Secondary, Optional)
+**Tipo**: Primario  
 
-**Overview**: A brief description of what happens in this use case.
+**Overview**: Descripción general del caso de uso.
 
-Typical course of events:
+Curso típico de las acciones:
 ----------------------
 
-| Actor Action | System Response |
+| Actor Acción | Respuesta del sistema |
 |:--------------|:----------------|
 | 1. This use case begins when Actor wants to initiate an event.| |
 | 2. The Actor does something... | 3. The system determines something or responds... |
@@ -21,7 +24,7 @@ Typical course of events:
 |5. | 6. |
 
 
-Alternative Courses:
+Cursos Alternativos:
 -----------
 1a. ...
 
