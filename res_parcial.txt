@@ -1,0 +1,11 @@
+:Investigador: As inv
+:Encuestador: As enc
+:Geoposicion: As geo
+
+inv -- (Generar encuesta)
+(Generar encuesta)
+(Editar encuesta)
+(Versionar encuesta)
+(Accedesbu a respuestas)
+(Asignar encuestas a encuestador)
+

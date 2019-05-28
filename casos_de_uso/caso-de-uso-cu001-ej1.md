@@ -1,19 +1,21 @@
-Caso de uso: Nombre del caso de uso.
+Caso de uso: Loguearse en el sistema
 =================================
 
 **ID**: CU001
 
-**Actors**: Actor
+**Actors**: Funcionario, Administrador, Supervisor, Productor.
 
-**Alcance**: Sistema de software
-
-**Proposito**: Intención del caso de uso.
+**Proposito**: Permite el acceso de los usuarios al sistema.
 
 **Tipo**: Primario  
-**Precondicion**: Primario  
-**Postcondicion**: Primario  
 
-**Overview**: Descripción general del caso de uso.
+**Precondiciones**: El usuario debe haber registrado su cuenta previamente y debe encontrarse
+activa.
+
+**Postcondiciones**: El usuario se encuentra en su vista inicial del sistema y dispone de todas
+sus funcionalidades.
+
+
 
 Curso típico de las acciones:
 ----------------------

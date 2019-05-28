@@ -1,0 +1,75 @@
+@startuml
+
+class Persona {
+--private data--
+String nombre
+String apellido
+String identificacion
+String disciplina
+Date fechaDeNacimiento
+String tel
+String calleDomicilio
+int nroCasa
+--public--
+..getters..
++ getNombre()
++ getApellido()
++ getIdentificacion()
+..setters..
++ setNombre()
++ setApellido()
++ setIdentificacion()
+}
+
+class Investigador {
+
+~ VerListadoEncuestas()
+~ VerListadoEncuestas()
+~ CrearEncuesta()
+~ ModificarEncuesta()
+~ EliminarEncuesta()
+~ VersionarEncuesta()
+~ VerTableroEstadisticas()
+~ GenerarIndicador ()
+~ EliminarEncuesta 
+~ RegistrarEncuestador()
+~ SeleccionarEncuesta()
+~ SeleccionarVersionEncuesta()
+}
+class Seccion{
+}
+class Pregunta{
+}
+class TipoDePregunta{
+}
+class OpcionMultiple{
+}
+class Encuestador {
+~ VerListadoEncuestas()
+~ SeleccionarEncuesta()
+~ SeleccionarVersionEncuesta()
+}
+class Dashboard {
+- List estadisticas
+- List <encuesta>
+}
+
+Persona "1"<|-down-"1" Investigador
+Persona "1"<|-down-"1" Encuestador
+
+class Encuesta {
+- Fecha
+- Titulo
+--
+~ VerListadoVersiones()
+}
+
+class VersionEncuesta {
+- Fecha
+- Titulo
+--
+~ VerListadoVersiones()
+}
+
+@enduml
+
