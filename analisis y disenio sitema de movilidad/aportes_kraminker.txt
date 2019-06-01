@@ -1,0 +1,43 @@
+plazamientos, circulación de residentes y turistas (objetivo A),
+
+Modalidad
+
+Cantidad
+
+Velocidades (¿en minutos?)
+
+Temporalidades (horarios/franja)
+
+Origen
+
+Destino (debe permitir reponer la distancia)
+
+Finalidad/Objetivo (¿otorgado por la persona o por el/la encuestador/a?)
+
+Costo
+
+ 
+
+Caracterización sociodemográfica
+
+Lugar de residencia,
+
+Condición socio-económica (pensar cómo acorde a universo/población, oportunidad o que luego sea comparable), Inserción laboral, rama, nivel educativo
+
+Edad,
+
+Género,
+
+Lugar de nacimiento
+
+Otras determinaciones que puedan generar accesibilidades
+
+ 
+
+Experiencias diferenciadas en su movilidad urbana/ Percepción de cómo viaja      
+
+Dimensión subjetiva/
+
+Potencial/ Si viene a la universidad/ Viajes posibles y/o deseados
+
+ 
