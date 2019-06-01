@@ -22,66 +22,83 @@ int nroCasa
 }
 
 class Investigador {
---public--
-+ RegistrarEncuestador()
-+ RegistrarInvestigador()
-+ CrearEncuesta()
-+ VersionarEncuesta()
-+ AsignarVersionEncuestador()
-+ DesaignarVersionEncuestador()
-+ VerListadoVersionesEncuestas()
-+ VerListadoEncuestas()
-+ EditarEncuesta()
-+ EliminarEncuesta()
-+ VerTableroEstadisticas()
-+ GenerarIndicador ()
-+ EditarVersionEncuesta()
+    --public--
+    + RegistrarEncuestador()
+    + RegistrarInvestigador()
+    + CrearEncuesta()
+    + VersionarEncuesta()
+    + AsignarVersionEncuestador()
+    + DesaignarVersionEncuestador()
+    + VerListadoVersionesEncuestas()
+    + VerListadoEncuestas()
+    + EditarEncuesta()
+    + EliminarEncuesta()
+    + VerTableroEstadisticas()
+    + GenerarIndicador ()
+    + EditarVersionEncuesta()
 }
 class Seccion{
 }
 class Pregunta{
-    Tipo tipoPregunta
 }
 class Encuestador {
-~ VerListadoEncuestas()
-~ SeleccionarEncuesta()
-~ SeleccionarVersionEncuesta()
+    ~ VerListadoEncuestas()
+    ~ SeleccionarEncuesta()
+    ~ SeleccionarVersionEncuesta()
+}
+class Encuestado {
+    ~ ResponderPregunta()
 }
 class Dashboard {
-- List estadisticas
-- List <encuesta>
 }
 class Indicador{
     + EditarIndicador()
 }
 
 class Encuesta {
-- Fecha
-- Titulo
---
-~ VerListadoVersiones()
+    - Fecha
+    - Titulo
+    --
+    ~ VerListadoVersiones()
 }
 
 class VersionEncuesta {
-- Fecha
-- Titulo
---
+    - Fecha
+    - Titulo
+    --
 }
-class RespuestaVersion{
+class Respuesta{
 }
-class TipoRespuestaVersion{
+class TipoRespuesta{
+}
+class Desplazamiento{
+    
+}
+class Modalidad{
+    
 }
 
-Persona "1"<|-down-"1" Investigador
-Persona "1"<|-down-"1" Encuestador
-Investigador "1"--"n" Encuestador
-Investigador "n"--"m" Encuesta
-Encuesta "1"--"1" Dashboard
-Encuesta "1"--"n" VersionEncuesta
-VersionEncuesta "1"--"n" Indicador
-VersionEncuesta "1"--"n" RespuestaVersion
-Seccion "1"--"n" Pregunta
-VersionEncuesta "1"--"n" Seccion
-Encuestador "1"--"n" RespuestaVersion
+
+Persona "1"<|-down->"1" Investigador
+Persona "1"<|-down->"1" Encuestador
+Persona "1"<|-down->"1" Encuestado
+
+Encuestado"1"<|-down->"1..*" Residente 
+Encuestado"1"<|-down->"1..*" Turista 
+Encuestado "1"-->"1..*" Desplazamiento
+
+Investigador "1"-left->"1..*" Encuestador
+Investigador "1..*"<-down->"1..*" Encuesta
+
+Encuesta "1"-down->"1" Dashboard
+Encuesta "1"-->"1..*" VersionEncuesta
+Encuestador "1..*"<-->"1..*" VersionEncuesta
+Indicador "1..*"<-up-> "1..*" Pregunta
+Indicador "1..*"<-down-> "1" TipoIndicador 
+Pregunta "1"<-right->"1" Respuesta
+Respuesta "1..*"<-down->"1" TipoRespuesta
+Seccion "1"-right->"1..*" Pregunta
+VersionEncuesta "1"-->"1..*" Seccion
+Encuestado "1"-->"1..*" Respuesta
 @enduml
 
