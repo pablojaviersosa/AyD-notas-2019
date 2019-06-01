@@ -74,7 +74,7 @@ class TipoRespuesta{
 class Desplazamiento{
     
 }
-class Modalidad{
+class TipoModalidad{
     
 }
 
@@ -86,6 +86,8 @@ Persona "1"<|-down->"1" Encuestado
 Encuestado"1"<|-down->"1..*" Residente 
 Encuestado"1"<|-down->"1..*" Turista 
 Encuestado "1"-->"1..*" Desplazamiento
+TipoModalidad "1"<--"1..*" Desplazamiento
+Encuestado "1"-->"1..*" Respuesta
 
 Investigador "1"-left->"1..*" Encuestador
 Investigador "1..*"<-down->"1..*" Encuesta
@@ -93,12 +95,13 @@ Investigador "1..*"<-down->"1..*" Encuesta
 Encuesta "1"-down->"1" Dashboard
 Encuesta "1"-->"1..*" VersionEncuesta
 Encuestador "1..*"<-->"1..*" VersionEncuesta
+
 Indicador "1..*"<-up-> "1..*" Pregunta
 Indicador "1..*"<-down-> "1" TipoIndicador 
+
+Seccion "1"-right->"1..*" Pregunta
 Pregunta "1"<-right->"1" Respuesta
 Respuesta "1..*"<-down->"1" TipoRespuesta
-Seccion "1"-right->"1..*" Pregunta
 VersionEncuesta "1"-->"1..*" Seccion
-Encuestado "1"-->"1..*" Respuesta
 @enduml
 
