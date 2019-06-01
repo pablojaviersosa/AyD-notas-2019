@@ -38,7 +38,6 @@ class Investigador {
 + EditarVersionEncuesta()
 }
 class Seccion{
--    List <Pregunta> listadoPreguntas
 }
 class Pregunta{
     Tipo tipoPregunta
@@ -48,9 +47,9 @@ class Encuestador {
 ~ SeleccionarEncuesta()
 ~ SeleccionarVersionEncuesta()
 }
+class Encuestado {
+}
 class Dashboard {
-- List estadisticas
-- List <encuesta>
 }
 class Indicador{
     + EditarIndicador()
@@ -70,8 +69,9 @@ class VersionEncuesta {
 }
 class RespuestaVersion{
 }
-Persona "1"<|-down-"1" Investigador
-Persona "1"<|-down-"1" Encuestador
+Persona "1"<|-down-"n" Investigador
+Persona "1"<|-down-"n" Encuestador
+Persona "1"<|-down-"n" Encuestado
 Investigador "1"--"n" Encuestador
 Investigador "n"--"m" Encuesta
 Encuesta "1"--"1" Dashboard
