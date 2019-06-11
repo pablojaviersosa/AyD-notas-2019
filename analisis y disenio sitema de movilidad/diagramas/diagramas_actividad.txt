@@ -1,0 +1,11 @@
+@startuml
+start
+
+if (Diagramas de actividades bien hecho?)then (yes)
+    :Procesar todos\nlos diagramas;
+else (no)
+    :Hacer alguna\n otra cosa;
+endif
+
+stop
+@enduml

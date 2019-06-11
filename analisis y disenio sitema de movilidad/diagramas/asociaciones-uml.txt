@@ -1,0 +1,22 @@
+@startuml
+
+
+class Persona {
+}
+
+class Compania {
+}
+class right PeliculaVideo {
+}
+PeliculaVideo .right.> Canal :dependencia
+note top of PeliculaVideo
+    Relación Semántica.Si se realizan cambios en Canal, seguramente habrá que realizar
+    cambios en PeliculaVideo 
+end note
+Persona "1..*"-right-"*" Compania : Relacion de Asociacion
+Curso "1" o.right."*" Alumno : Relacion de agregacion
+Ventana "1"*--right--"1" MarcoVentana : Relacion de Composicion
+
+
+@enduml
+

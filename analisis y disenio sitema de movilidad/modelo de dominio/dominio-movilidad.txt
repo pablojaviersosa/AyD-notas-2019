@@ -5,20 +5,20 @@ abstract class Persona {
 String nombre
 String apellido
 String identificacion
-String disciplina
-Date fechaDeNacimiento
-String tel
-String calleDomicilio
-int nroCasa
---public--
-..getters..
-+ getNombre()
-+ getApellido()
-+ getIdentificacion()
-..setters..
-+ setNombre()
-+ setApellido()
-+ setIdentificacion()
+/' String disciplina '/
+/' Date fechaDeNacimiento '/
+/' String tel '/
+/' String calleDomicilio '/
+/' int nroCasa '/
+/' --public-- '/
+/' ..getters.. '/
+/' + getNombre() '/
+/' + getApellido() '/
+/' + getIdentificacion() '/
+/' ..setters.. '/
+/' + setNombre() '/
+/' + setApellido() '/
+/' + setIdentificacion() '/
 }
 
 class Investigador {
@@ -37,8 +37,8 @@ class Investigador {
     + GenerarIndicador ()
     + EditarVersionEncuesta()
 }
-class Seccion{
-}
+/' class Seccion{ '/
+/' } '/
 class Pregunta{
 }
 class Encuestador {
@@ -71,22 +71,31 @@ class Respuesta{
 }
 class TipoRespuesta{
 }
-class Desplazamiento{
+class Viaje{
     
 }
 class TipoModalidad{
     
 }
+class Ocupacion{
+}
 
 
-Persona "1"<|-down->"1" Investigador
+Persona "1"<|.down->"1" Investigador
 Persona "1"<|-down->"1" Encuestador
 Persona "1"<|-down->"1" Encuestado
+Persona "1".down.>"n" Ocupacion
+
+/' Ocupacion "1".down.>"n" Empleado '/
+/' Ocupacion "1".down.>"n" Estudiante '/
+/' Ocupacion "1".down.>"n" Independiente '/
+/' Ocupacion "1".down.>"n" Desempleado '/
+Ocupacion "1".down.>"1" TipoOcupacion
 
 Encuestado"1"<|-down->"1..*" Residente 
 Encuestado"1"<|-down->"1..*" Turista 
-Encuestado "1"-->"1..*" Desplazamiento
-TipoModalidad "1"<--"1..*" Desplazamiento
+Encuestado "1"-->"1..*" Viaje
+TipoModalidad "1"<--"1..*" Viaje
 Encuestado "1"-->"1..*" Respuesta
 
 Investigador "1"-left->"1..*" Encuestador
