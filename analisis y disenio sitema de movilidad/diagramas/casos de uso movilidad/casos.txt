@@ -1,0 +1,81 @@
+@startuml
+
+/' Casos de uso del software encuestas y analisis de la movilidad de Puerto Madryn '/
+header <size:23>**Casos de uso del software de encuestas y analisis de la movilidad de Puerto Madryn. **</size>
+/'Actores  '/
+left to right direction
+:Encuestador: as encuestador
+:Investigador: as investigador
+:Encuestado: as encuestado
+
+rectangle {
+
+usecase UC1 as "
+"**Registrar viajes** de encuestados, de acuerdo con:
+--
+"**Motivacion**: Estudio, Trabajo, Recreacion, otro.
+--
+**Frecuencia:** [x]Lu,[x] Ma,[] Mie,[x] Jue, []Vie,[] Sa,[] Do.
+--
+**Franja Horaria:** Entre las 14:30 y las 15:45
+--
+**Duracion total:**
+--
+**Costo total:**
+"
+usecase UC2 as " Registrar viaje por tramos de acuerdo con:
+**Tramo 1**
+--
+**Origen:** Desde M.A.Zar: Altura: 1500 
+--
+**Hasta:** M.A.Zar Altura: 1800
+--
+**Modo:** Pie - Moto - Bici - Auto - Taxi - Colectivo 
+--
+**Costo:** en pesos$
+"
+/' usecase log as "**Loguearse** en el sistema" '/
+usecase CU0001 as "**Loguearse** en el sistema"
+usecase CU0002 as "Cargar encuestado"
+usecase CU0003 as "**Releva calidad tramo de viaje **- muy agradable - agradable - desagradable" 
+usecase CU0004 as "Releva tramo de viaje económico 1-2-3-4-5"
+usecase CU0005 as "Filtrar estudiantes por **Escuela**"
+usecase CU0006 as "Filtrar encuestados por **Ocupacion**"
+usecase CU0007 as "Filtrar encuestados por establecimiento **Destino**"
+usecase CU0008 as "Filtrar encuestados por **Lugar de Residencia**"
+usecase CU0010 as "Filtrar encuestados por **Edad**"
+usecase CU0011 as "Filtrar encuestados por **Genero**"
+usecase CU0012 as "Filtrar encuestados por **Lugar de nacimiento**"
+usecase CU0013 as "Combinar n filtros"
+usecase CU0010 as "Identificar Grupos familiares"
+usecase CU0011 as "Remover encuestas duplicadas"
+usecase CU0012 as "Determinar recorridos y modos que finalizan en establecimientos educativos"
+usecase CU0013 as "Determinar el nivel socioeconomico"
+usecase CU0014 as "Autoencuestarse"
+
+
+/' (Determinar el nivel socioeconomico) '/
+encuestador -- CU0001 /'loguearse'/
+encuestador -- UC1
+encuestador -- CU0002 /'Releva la calidad del tramo de viaje'/
+encuestador -- CU0003
+encuestador -- CU0004
+
+investigador -- CU0001
+investigador -- CU0005
+investigador -- CU0006 
+investigador -- CU0007 
+investigador -- CU0008 
+investigador -- CU0010 
+investigador -- CU0011 
+investigador -- CU0012 
+investigador -- CU0013 
+investigador -- CU0014
+investigador -- CU0015
+investigador -- CU0016
+investigador -- CU0017
+
+:UC1:-->:UC2: 
+}
+@enduml
+
