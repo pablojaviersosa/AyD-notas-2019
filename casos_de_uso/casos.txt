@@ -36,7 +36,7 @@ usecase UC2 as " Registrar viaje por tramos de acuerdo con:
 --
 **Origen:** Desde M.A.Zar: Altura: 1500 hasta: M.A.Zar Altura: 1800
 --
-**Modo:** Pie - Moto - Bici - Auto - Taxi - Colectivo 
+**Modo:** Pie - Moto - Bici - Auto - Taxi - Colectivo
 --
 **Costo:** en pesos$
 "
@@ -47,7 +47,7 @@ edor -- (Cargar encuestador)
 edor -- (Calificar tramo de viaje - muy agradable - agradable - desagradable )
 edor -- (Calificar tramo de viaje económico -1-2-3-4-5)
 
-idor -- log 
+idor -- log
 idor -- (Filtrar estudiantes por **Escuela**)
 idor -- (Filtrar encuestados por **Ocupacion**)
 idor -- (Filtrar encuestados por establecimiento **Destino**)
@@ -60,7 +60,9 @@ idor -- (Identificar Grupos familiares)
 idor -- (Remover encuestas duplicadas)
 idor -- (Visualizar estadísticas básicas del sistema)
 idor -- (Validar datos ingresados de forma automática, cuando corresponda)
+idor -- (Validar datos ingresados de forma automática, cuando corresponda)
+idor -- (Validar datos ingresados de forma automática, cuando corresponda)
+idor -- ()
 :UC1:1" -->"*" :UC2:
 }
 @enduml
-
