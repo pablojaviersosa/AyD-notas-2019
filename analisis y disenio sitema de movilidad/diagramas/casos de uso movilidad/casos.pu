@@ -42,7 +42,7 @@ usecase CU0004 as "Encuestar padre"
 usecase CU0005 as "Encuestar tutor/encargado"
 usecase CU0006 as "Encuestar hermanx" 
 usecase CU0007 as "Encuestar otro familiar" 
-usecase CU0007 as "Registrar ocupaci:" 
+usecase CU0007 as "Registrar ocupacion" 
 usecase CU0007 as "Encuestar otro familiar" 
 usecase CU0007 as "Encuestar otro familiar" 
 usecase CU0007 as "Encuestar otro familiar" 
@@ -56,27 +56,27 @@ usecase CU0013 as "Registrar Medio de transporte utilizado "
 usecase CU0014 as "Registrar ubicacion de Origen "
 usecase CU0015 as "Calle y Altura "
 usecase CU0016 as "Registrar ubicacion de destino"
-"Filtrar estudiantes por **Escuela**"
-"Filtrar encuestados por **Ocupacion**"
-"Filtrar encuestados por establecimiento **Destino**"
- "Filtrar encuestados por **Lugar de Residencia**"
- "Filtrar encuestados por **Edad**"
- "Filtrar encuestados por **Genero**"
- "Filtrar encuestados por **Lugar de nacimiento**"
- "Combinar n filtros"
- "Encuestar grupo familiar"
+usecase CU0020 as"Filtrar estudiantes por **Escuela**"
+usecase CU0018 as"Filtrar encuestados por **Ocupacion**"
+usecase CU0019 as"Filtrar encuestados por establecimiento **Destino**"
+usecase CU0021 as "Filtrar encuestados por **Lugar de Residencia**"
+usecase CU0022 as "Filtrar encuestados por **Edad**"
+usecase CU0023 as "Filtrar encuestados por **Genero**"
+usecase CU0024 as "Filtrar encuestados por **Lugar de nacimiento**"
+usecase CU0025 as "Combinar n filtros"
+usecase CU0026 as "Encuestar grupo familiar"
  
  
  
-usecase CU0017 as 
-usecase CU0018 as 
-usecase CU0019 as 
 /' usecase CU0029 as "Determinar cant. máx de viajes realizados en diferentes franjas horarias de acuerdo al vehículo utilizado" '/
-usecase CU0021 as "Identificar Grupo familiar de encuestador"
-usecase CU0022 as "Remover encuestas duplicadas"
-usecase CU0023 as "Determinar recorridos y modos que finalizan en establecimientos educativos"
-usecase CU0024 as "Determinar nivel socioeconomico del encuestado"
-usecase CU0025 as "Modificar encuesta"
+ 
+ 
+ 
+ "Identificar Grupo familiar de encuestador"
+ "Remover encuestas duplicadas"
+ "Determinar recorridos y modos que finalizan en establecimientos educativos"
+ "Determinar nivel socioeconomico del encuestado"
+ "Modificar encuesta"
 usecase CU0026 as "Realizar Encuestas a adulto responsable"
 usecase CU0027 as "Proposito del viaje"
 usecase CU0028 as "Determinar medio de transporte mas utilizado"
