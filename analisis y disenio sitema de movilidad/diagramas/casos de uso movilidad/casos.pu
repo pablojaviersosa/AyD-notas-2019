@@ -2,12 +2,11 @@
 
 /' Casos de uso del software encuestas y analisis de la movilidad de Puerto Madryn '/
 header <size:23>**Casos de uso del software de encuestas y analisis de la movilidad de Puerto Madryn. **</size>
-/'Actores  '/
 left to right direction
+skinparam packageStyle rect
+/'Actores  '/
 :Encuestador: as encuestador
 :Investigador: as investigador
-
-rectangle {
 /'
 usecase UC1 as "
 "**Registrar viajes** de encuestados, de acuerdo con:
@@ -36,80 +35,58 @@ usecase UC2 as " Registrar viaje por tramos de acuerdo con:
 '/
 /'Encuestador y grupo familiar'/
 usecase CU0001 as "**Loguearse** en el sistema"
-usecase CU0002 as "Autoencuestarse"
-usecase CU0003 as "Encuestar madre"
-usecase CU0004 as "Encuestar padre"
-usecase CU0005 as "Encuestar tutor/encargado"
-usecase CU0006 as "Encuestar hermanx" 
-usecase CU0007 as "Encuestar otro familiar" 
-usecase CU0007 as "Registrar ocupacion" 
-usecase CU0007 as "Encuestar otro familiar" 
-usecase CU0007 as "Encuestar otro familiar" 
-usecase CU0007 as "Encuestar otro familiar" 
-usecase CU0007 as "Encuestar otro familiar" 
-usecase CU0008 as "Registrar viaje del encuestado "
-usecase CU0009 as "Registrar duración de viaje "
-usecase CU0010 as "Registrar Costo del viaje"
-usecase CU0011 as "Registrar Tramo de viaje "
-usecase CU0012 as "Registrar hora"
-usecase CU0013 as "Registrar Medio de transporte utilizado "
-usecase CU0014 as "Registrar ubicacion de Origen "
-usecase CU0015 as "Calle y Altura "
-usecase CU0016 as "Registrar ubicacion de destino"
-usecase CU0020 as"Filtrar estudiantes por **Escuela**"
-usecase CU0018 as"Filtrar encuestados por **Ocupacion**"
-usecase CU0019 as"Filtrar encuestados por establecimiento **Destino**"
-usecase CU0021 as "Filtrar encuestados por **Lugar de Residencia**"
-usecase CU0022 as "Filtrar encuestados por **Edad**"
-usecase CU0023 as "Filtrar encuestados por **Genero**"
-usecase CU0024 as "Filtrar encuestados por **Lugar de nacimiento**"
-usecase CU0025 as "Combinar n filtros"
-usecase CU0026 as "Encuestar grupo familiar"
- 
- 
- 
-/' usecase CU0029 as "Determinar cant. máx de viajes realizados en diferentes franjas horarias de acuerdo al vehículo utilizado" '/
- 
- 
- 
- "Identificar Grupo familiar de encuestador"
- "Remover encuestas duplicadas"
- "Determinar recorridos y modos que finalizan en establecimientos educativos"
- "Determinar nivel socioeconomico del encuestado"
- "Modificar encuesta"
-usecase CU0026 as "Realizar Encuestas a adulto responsable"
-usecase CU0027 as "Proposito del viaje"
-usecase CU0028 as "Determinar medio de transporte mas utilizado"
-usecase CU0020 as "Determinar cantidad máx 
-de viajes realizados a diferentes horas
-de acuerdo el vehículo utilizado."
-usecase CU0030 as "Filtrar Encuestas por Genero"
-usecase CU0031 as "Realizar Encuesta a integrantes del hogar identificando relacion con el encuestado"
-usecase CU0032 as "Cargar en cuestador"
-/' usecase CU0033 as "Releva calidad - muy agradable - agradable - poco agradable - desagradable " '/
-usecase CU0034 as "Filtrar encuestas por edad"
-usecase CU0035 as "Realizar Encuesta a integrantes del hogar"
-usecase CU0036 as "Filtrar Encuestas por Genero "
-usecase CU0037 as "Releva calidad - muy agradable - agradable - poco agradable - desagradable "
-usecase CU0038 as "Filtrar encuestas por edad"
-usecase CU0039 as "Filtrar estudiantes por Escuela"
-usecase CU0041 as "Filtrar encuestados por Ocupacion"
-usecase CU0042 as "Filtrar encuestados por establecimiento Destino"
-usecase CU0043 as "Filtrar encuestados por Lugar de nacimiento"
-usecase CU0044 as "Filtrar encuestas por encuestador "
+usecase CU0002 as "Modificar encuesta realizada - en cierto lapso de tiempo "
+usecase CU0003 as "Encuestar grupo familiar"
+usecase CU0004 as "Autoencuestarse"
+usecase CU0005 as "Encuestar madre"
+usecase CU0006 as "Encuestar padre"
+usecase CU0007 as "Encuestar tutor/encargado"
+usecase CU0008 as "Encuestar hermanx" 
+usecase CU0009 as "Encuestar otro familiar" 
+usecase CU0010 as "Registrar ocupacion" 
+usecase CU0011 as "Registrar estudiante" 
+usecase CU0012 as "Registrar empleado" 
+usecase CU0013 as "Registrar autonomo" 
+usecase CU0014 as "Registrar desempleado/en busqueda de empleo" 
+usecase CU0015 as "Registrar establecimiento en el que se ocupa (Escuela u otro establecimiento publico)."
+usecase CU0016 as "Registrar Genero"
+usecase CU0017 as "Registrar fecha de nacimiento"
+usecase CU0018 as "Registrar lugar de naciemiento"
 /'Viaje'/
-usecase CU0045 as 
-usecase CU0046 as 
-usecase CU0047 as 
-usecase CU0048 as 
-usecase CU0049 as 
-usecase CU0050 as 
-usecase CU0051 as 
-usecase CU0052 as 
-usecase CU0053 as 
-usecase CU0054 as "revisar" 
+usecase CU0015 as "Registrar viaje del encuestado "
+usecase CU0016 as "Registrar duración de viaje "
+usecase CU0017 as "Registrar Costo del viaje"
+usecase CU0018 as "Registrar Tramo de viaje "
+usecase CU0019 as "Registrar hora"
+usecase CU0020 as "Registrar Medio de transporte utilizado "
+usecase CU0021 as "Registrar Origen "
+usecase CU0022 as "Calle y Altura "
+usecase CU0023 as "Registrar Destino"
+usecase CU0024 as "Registra percepción de costo de viaje 1-2-3-4-5"
+usecase CU0025 as "Registrar calidad - muy agradable - agradable - poco agradable - desagradable"
+/' Investigador '/
+usecase CU0027 as "Cargar en cuestador"
+usecase CU0025 as "Determinar cantidad máx de viajes realizados a diferentes horas de acuerdo el vehículo utilizado."
+usecase CU0026 as "Filtrar Encuestas por Genero"
+usecase CU0033 as "Filtrar encuestados por Destino"
+usecase CU0035 as "Filtrar encuestas por Encuestador"
+usecase CU0036 as "Filtrar estudiantes por **Escuela**"
+usecase CU0037 as "Filtrar encuestados por **Ocupacion**"
+usecase CU0038 as "Filtrar encuestados por establecimiento **Destino**"
+usecase CU0039 as "Filtrar encuestados por **Lugar de Residencia**"
+usecase CU0040 as "Filtrar encuestados por **Edad**"
+usecase CU0041 as "Filtrar encuestados por **Genero**"
+usecase CU0042 as "Filtrar encuestados por **Lugar de nacimiento**"
+usecase CU0043 as "Combinar n filtros"
+usecase CU0044 as "Determinar cant. máx de viajes realizados en diferentes franjas horarias de acuerdo al vehículo utilizado"
+usecase CU0045 as "Identificar Grupo familiar de encuestador"
+usecase CU0046 as "Remover encuestas duplicadas, o redundantes por relevamiento de distintos estudiantes del mismo hogar"
+usecase CU0047 as "Determinar cantidad y modalidad que finalizan en establecimientos educativos"
+usecase CU0048 as "Determinar nivel socioeconomico del encuestado"
+usecase CU0049 as "Modificar encuesta"
+usecase CU0050 as "Determinar medio de transporte mas utilizado"
+usecase CU0051 as "Determinar el nivel socioeconomico"
 
-/' (Determinar el nivel socioeconomico) '/
 encuestador -- CU0001 /'loguearse'/
 /'encuestador -- UC1'/
 encuestador -- CU0002 /'Registra la calidad del tramo de viaje'/
@@ -131,7 +108,7 @@ CU0013 ..down..>  CU0014
 CU0013 ..down..>  CU0015
 CU0013 ..down..>  CU0016
 CU0013 ..down..>  CU0017
-    CU0013 ..down..>  CU0018
+CU0013 ..down..>  CU0018
 CU0013 ..down..>  CU0019
 /':TC1:-->:UC2: '/
 
@@ -146,6 +123,3 @@ CU0045 ..down..>CU0053
 CU0045 ..down..>CU0054
 }
 @enduml
-"Cargar encuestador"
-"**Registra confort tramo de viaje **- muy agradable - agradable - desagradable" 
-"Registra percepción de costo de tramo de viaje 1-2-3-4-5"
