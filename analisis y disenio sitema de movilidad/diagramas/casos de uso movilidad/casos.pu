@@ -35,7 +35,7 @@ usecase UC2 as " Registrar viaje por tramos de acuerdo con:
 '/
 /'Encuestador y grupo familiar'/
 usecase CU0001 as "**Loguearse** en el sistema"
-usecase CU0002 as "Modificar encuesta realizada - en cierto lapso de tiempo "
+usecase CU0002 as "Modificar encuesta realizada en cierto lapso de tiempo "
 usecase CU0003 as "Encuestar grupo familiar"
 usecase CU0004 as "Autoencuestarse"
 usecase CU0005 as "Encuestar madre"
@@ -52,23 +52,44 @@ usecase CU0015 as "Registrar establecimiento en el que se ocupa (Escuela u otro 
 usecase CU0016 as "Registrar Genero"
 usecase CU0017 as "Registrar fecha de nacimiento"
 usecase CU0018 as "Registrar lugar de naciemiento"
+usecase CU0019 as "Registrar estudios alcanzados 
+--
+Primario incompleto
+--
+Primario completo
+--
+Secundario incompleto
+--
+Secundario completo
+--
+Terciario incompleto
+--
+Terciario completo
+--
+Universitario incompleto
+--
+Universitario completo
+--
+Otro
+"
 /'Viaje'/
-usecase CU0015 as "Registrar viaje del encuestado "
-usecase CU0016 as "Registrar duración de viaje "
-usecase CU0017 as "Registrar Costo del viaje"
-usecase CU0018 as "Registrar Tramo de viaje "
-usecase CU0019 as "Registrar hora"
-usecase CU0020 as "Registrar Medio de transporte utilizado "
-usecase CU0021 as "Registrar Origen "
-usecase CU0022 as "Calle y Altura "
-usecase CU0023 as "Registrar Destino"
-usecase CU0024 as "Registra percepción de costo de viaje 1-2-3-4-5"
-usecase CU0025 as "Registrar calidad - muy agradable - agradable - poco agradable - desagradable"
+usecase CU0020 as "Registrar viaje del encuestado "
+usecase CU0021 as "Registrar duración de viaje "
+usecase CU0022 as "Registrar Costo del viaje"
+usecase CU0023 as "Registrar Tramo de viaje "
+usecase CU0024 as "Registrar hora"
+usecase CU0025 as "Registrar Medio de transporte utilizado"
+usecase CU0026 as "Registrar Origen"
+usecase CU0027 as "Calle y Altura "
+usecase CU0028 as "Registrar Destino"
+usecase CU0029 as "Registra percepción de costo de viaje 1-2-3-4-5"
+usecase CU0030 as "Registrar calidad - muy agradable - agradable - poco agradable - desagradable"
+usecase CU0031 as "Registrar dias"
 /' Investigador '/
-usecase CU0027 as "Cargar en cuestador"
-usecase CU0025 as "Determinar cantidad máx de viajes realizados a diferentes horas de acuerdo el vehículo utilizado."
-usecase CU0026 as "Filtrar Encuestas por Genero"
-usecase CU0033 as "Filtrar encuestados por Destino"
+usecase CU0031 as "Cargar Encuestador"
+usecase CU0032 as "Determinar cantidad máx de viajes realizados a diferentes horas de acuerdo el vehículo utilizado."
+usecase CU0033 as "Filtrar Encuestas por Genero"
+usecase CU0034 as "Filtrar encuestados por Destino"
 usecase CU0035 as "Filtrar encuestas por Encuestador"
 usecase CU0036 as "Filtrar estudiantes por **Escuela**"
 usecase CU0037 as "Filtrar encuestados por **Ocupacion**"
@@ -87,39 +108,42 @@ usecase CU0049 as "Modificar encuesta"
 usecase CU0050 as "Determinar medio de transporte mas utilizado"
 usecase CU0051 as "Determinar el nivel socioeconomico"
 
+/'Relaciones  '/
 encuestador -- CU0001 /'loguearse'/
 /'encuestador -- UC1'/
-encuestador -- CU0002 /'Registra la calidad del tramo de viaje'/
-encuestador -- CU0003
-encuestador -- CU0004
-encuestador -right- CU0013 /'Encuestar grupo famliar'/
-encuestador -- CU0045 /'Registrar viajes'/
+encuestador -- CU0002 /'Mod encuesta'/
+encuestador -- CU0003 /'Datos personales'/
+CU0003 ..down..>  CU0004
+CU0003 ..down..>  CU0005
+CU0003 ..down..>  CU0006
+CU0003 ..down..>  CU0007
+CU0003 ..down..>  CU0008
+CU0003 ..down..>  CU0009
+encuestador -- CU0010  /'ocupacion'/
+CU0010 ..down..>  CU0011
+CU0010 ..down..>  CU0012
+CU0010 ..down..>  CU0013
+CU0010 ..down..>  CU0014
+encuestador -- CU0015  
+encuestador -- CU0016  
+encuestador -- CU0017  
+encuestador -- CU0018  
+encuestador -- CU0019  
+/'Viaje  '/
+encuestador -- CU0020  
+CU0020  ..down..>  CU0021
+CU0020  ..down..>  CU0022
+CU0020  ..down..>  CU0023
+CU0020  ..down..>  CU0024
+CU0020  ..down..>  CU0025
+CU0020  ..down..>  CU0026
+CU0020  ..down..>  CU0028
+CU0020  ..down..>  CU0029
+CU0020  ..down..>  CU0030
+CU0020  ..down..>  CU0031
+CU0020  ..down..>  CU0032
+CU0026  ..down..>  CU0027
+CU0028  ..down..>  CU0027
 
-investigador -- CU0001
-investigador -- CU0005
-investigador -- CU0006 
-investigador -- CU0007 
-investigador -- CU0008
-investigador -- CU0010 
-investigador -- CU0011 
-investigador -- CU0012 
-
-CU0013 ..down..>  CU0014
-CU0013 ..down..>  CU0015
-CU0013 ..down..>  CU0016
-CU0013 ..down..>  CU0017
-CU0013 ..down..>  CU0018
-CU0013 ..down..>  CU0019
-/':TC1:-->:UC2: '/
-
-CU0045 ..down..>CU0046
-CU0045 ..down..>CU0047
-CU0045 ..down..>CU0048
-CU0045 ..down..>CU0049
-CU0045 ..down..>CU0050
-CU0045 ..down..>CU0051
-CU0045 ..down..>CU0052
-CU0045 ..down..>CU0053
-CU0045 ..down..>CU0054
 }
 @enduml
